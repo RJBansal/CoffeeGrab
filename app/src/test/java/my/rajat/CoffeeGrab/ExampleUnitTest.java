@@ -1,4 +1,4 @@
-package my.rajat.gotcha;
+package my.rajat.CoffeeGrab;
 
 import org.junit.Test;
 

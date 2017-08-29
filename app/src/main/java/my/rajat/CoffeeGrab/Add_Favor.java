@@ -1,4 +1,4 @@
-package my.rajat.gotcha;
+package my.rajat.CoffeeGrab;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

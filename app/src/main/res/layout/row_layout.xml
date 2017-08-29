@@ -8,7 +8,7 @@
     android:weightSum="1"
     android:layout_marginTop="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="my.rajat.gotcha.MainActivity">
+    tools:context="my.rajat.CoffeeGrab.MainActivity">
 
     <LinearLayout
         android:layout_width="277dp"

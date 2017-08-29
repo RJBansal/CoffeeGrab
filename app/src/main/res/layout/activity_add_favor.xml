@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="my.rajat.gotcha.Add_Favor">
+    tools:context="my.rajat.CoffeeGrab.Add_Favor">
 
 
     <LinearLayout
