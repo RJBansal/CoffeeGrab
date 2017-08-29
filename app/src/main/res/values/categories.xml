@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="favor_categories">
+        <item>Food</item>
+        <item>Healthcare</item>
+        <item>Chore</item>
+        <item>Task</item>
+        <item>Electronics</item>
+        <item>Tutor</item>
+        <item>Labor</item>
+        <item>Other</item>
+    </string-array>
+    
+    
+</resources>
