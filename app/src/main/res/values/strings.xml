@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gotcha</string>
+    <string name="app_name">Offers</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -114,4 +114,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="select">-Select-</string>
+    <string name="title_activity_add_offer2">AddOffer2Activity</string>
+    <string name="title_activity_user_list">userList</string>
 </resources>

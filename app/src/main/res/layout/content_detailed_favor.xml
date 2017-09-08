@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="my.rajat.CoffeeGrab.Detailed_favor"
+    tools:context="my.rajat.Offer.Detailed_Offer"
     tools:showIn="@layout/activity_detailed_favor"
     android:orientation="vertical">
 

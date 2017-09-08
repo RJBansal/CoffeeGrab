@@ -1,4 +1,4 @@
-package my.rajat.CoffeeGrab;
+package my.rajat.Offer;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class Add_Favor extends AppCompatActivity {
+public class Add_Offer extends AppCompatActivity {
 
     String category, delivery;
     @Override

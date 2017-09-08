@@ -1,7 +1,8 @@
-package my.rajat.CoffeeGrab;
+package my.rajat.Offer;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by Rajat on 2017-08-27.
@@ -12,6 +13,7 @@ public class context_data_model implements Serializable {
     String name, description, category, delivery;
     int amount;
     int dt;
+    ArrayList<context_data_model> mylist = new ArrayList<context_data_model>();
 
     public context_data_model(String name, String description, String category, String delivery, int amount
     , int dt){

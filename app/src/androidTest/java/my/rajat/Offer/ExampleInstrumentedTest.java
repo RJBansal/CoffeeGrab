@@ -1,4 +1,4 @@
-package my.rajat.CoffeeGrab;
+package my.rajat.Offer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("my.rajat.CoffeeGrab", appContext.getPackageName());
+        assertEquals("my.rajat.Offer", appContext.getPackageName());
     }
 }

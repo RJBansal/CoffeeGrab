@@ -1,4 +1,4 @@
-package my.rajat.CoffeeGrab;
+package my.rajat.Offer;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

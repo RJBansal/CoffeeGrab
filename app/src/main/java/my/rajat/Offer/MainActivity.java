@@ -1,4 +1,4 @@
-package my.rajat.CoffeeGrab;
+package my.rajat.Offer;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity
 
     final int add_favor_activity_request_code = 1;
     final int detailed_favor_request_code = 2;
+    final int user_list_request_code = 3;
 
     ArrayList<context_data_model> array_of_Favors = new ArrayList<context_data_model>();
+    ArrayList<context_data_model> array_of_User_Favors = new ArrayList<context_data_model>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Add_Favor.class);
+                Intent intent = new Intent(MainActivity.this, Add_Offer.class);
                 startActivityForResult(intent, add_favor_activity_request_code);
 
             }
@@ -50,12 +52,13 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
         array_of_Favors.add(new context_data_model("hey","work","asshole","Pickup",100,101));
         initListView(array_of_Favors);
     }
 
     private void initListView(ArrayList<context_data_model> list ) {
-        //ListAdapter theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+
         MyListAdapter theAdapter = new MyListAdapter(this, list);
         ListView theListView = (ListView) findViewById(R.id.theListView);
 
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity
 
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 context_data_model item_selected = (context_data_model) adapterView.getItemAtPosition(i);
-                Intent detailed_intent = new Intent(MainActivity.this, Detailed_favor.class);
+                Intent detailed_intent = new Intent(MainActivity.this, Detailed_Offer.class);
                 detailed_intent.putExtra("detailed", item_selected);
 
                 startActivityForResult(detailed_intent, detailed_favor_request_code);
@@ -91,6 +94,10 @@ public class MainActivity extends AppCompatActivity
                 array_of_Favors.add(create_new);
                 initListView(array_of_Favors);
             }
+        }
+        if(requestCode == detailed_favor_request_code && resultCode == RESULT_OK){
+            context_data_model item = (context_data_model) data.getSerializableExtra("add_user_list");
+            array_of_User_Favors.add(item);
         }
     }
 
@@ -126,8 +133,11 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            System.exit(0);
+        if (id == R.id.nav_userlist) {
+            Intent userlist = new Intent(MainActivity.this, userList.class);
+            userlist.putExtra("userlist", array_of_User_Favors);
+            startActivityForResult(userlist, user_list_request_code);
+
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
     defaultConfig {
-        applicationId "my.rajat.CoffeeGrab"
+        applicationId "my.rajat.Offer"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1

@@ -3,14 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="my.rajat.Offer.Detailed_Offer">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
+        android:layout_height="60dp"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -19,25 +17,16 @@
             android:layout_height="match_parent"
             style="@style/AppTheme.PopupOverlay"
             android:id="@+id/favor_detailed_title"
-            android:textSize="40sp"
-            android:layout_marginTop="60dp"
+            android:textSize="25sp"
+            android:text="Your Offers"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="40dp"
-            android:layout_marginBottom="30dp"/>
+            android:layout_marginBottom="10dp"/>
 
 
     </android.support.design.widget.AppBarLayout>
+ <!--   <include layout="@layout/content_user_list" />-->
 
-    <include layout="@layout/content_detailed_favor" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        android:onClick="addToUserList"/>
 
 </android.support.design.widget.CoordinatorLayout>
